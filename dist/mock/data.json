@@ -1,0 +1,26 @@
+[
+    {
+        "image":"./source/china-2.jfif",
+        "song":"./source/CHINA-2-Sand.mp3",
+        "name": "CHINA-2",
+        "singer": "Sand",
+        "album": "【EDM】CHINA",
+        "isLike": true
+    },
+    {
+        "image":"./source/china-x.jpg",
+        "song":"./source/China-X-徐梦圆.mp3",
+        "name": "CHINA-X",
+        "singer": "徐梦圆",
+        "album": "change",
+        "isLike": true
+    },
+    {
+        "image":"./source/china-x+china-2.png",
+        "song":"./source/china-x+china-2.mp3",
+        "name": "CHINA-2+CHINA-X",
+        "singer": "王宇轩",
+        "album": "CHINA-x+CHINA-2",
+        "isLike": false
+    }
+]
