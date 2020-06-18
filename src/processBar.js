@@ -16,6 +16,10 @@ module.exports = class Bar {
         this.bar.style.left = 0;
     }
 
+    resetCurTime() {
+        this.curTimeDom.innerText = '00:00';
+    }
+
     startMove() {
         clearInterval(this.timer);
         this.timer = setInterval(() => {

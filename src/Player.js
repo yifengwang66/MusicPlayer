@@ -106,6 +106,7 @@ module.exports = class Player {
         this.index = (this.index - 1 + this.data.length) % this.data.length;
         this.bar.stopMove(); // 切歌之前需要先清除当前歌的计时器
         this.bar.removeBind();
+        this.bar.resetCurTime();
         this.loadMusic(this.index, playState);
         this.renderDom(this.index);
         this.menu.renderMenu(this.index);
@@ -118,6 +119,7 @@ module.exports = class Player {
         this.index = (this.index + 1 + this.data.length) % this.data.length;
         this.bar.stopMove(); // 切歌之前需要先清除当前歌的计时器
         this.bar.removeBind();
+        this.bar.resetCurTime()
         this.loadMusic(this.index, playState);
         this.renderDom(this.index);
         this.menu.renderMenu(this.index);
@@ -181,6 +183,7 @@ module.exports = class Player {
                 this.audio = null;
                 this.bar.stopMove();
                 this.bar.removeBind();
+                this.bar.resetCurTime();
                 this.loadMusic(index, playState);
                 this.renderDom(index);
                 this.menu.renderMenu(index);
