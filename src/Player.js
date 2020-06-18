@@ -179,6 +179,8 @@ module.exports = class Player {
                 let playState = this.audio.isPlay;
                 this.audio.pause();
                 this.audio = null;
+                this.bar.stopMove();
+                this.bar.removeBind();
                 this.loadMusic(index, playState);
                 this.renderDom(index);
                 this.menu.renderMenu(index);
